@@ -33,7 +33,7 @@ export default class ChargingStationCommands {
 
     this.device?.on("message", (messageTopic, messageData) => {
       try {
-        const payload = JSON.parse(messageData.toString());
+        const payload = JSON.parse(messageData);
 
         if (
           validatePayload(contract, payload, true) &&
@@ -44,7 +44,7 @@ export default class ChargingStationCommands {
           callback(payload);
         }
       } catch (error) {
-        logPrefixMessage(`Unable to parse payload data. Error: ${error}`);
+        logPrefixMessage(`Unable to parse payload data. ${error}`);
       }
     });
   }
