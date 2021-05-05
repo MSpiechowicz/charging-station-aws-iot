@@ -106,4 +106,5 @@ dist
 # npm
 package-lock.json
 
-# certificates
+# visual studio code
+.vscode
