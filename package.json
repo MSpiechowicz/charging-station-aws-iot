@@ -1,0 +1,30 @@
+{
+  "name": "charging-station-aws-iot",
+  "version": "0.0.1",
+  "description": "AWS IOT - MQTT Library for communication with charging station",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSpiechowicz/charging-station-aws-iot.git"
+  },
+  "keywords": [
+    "AWS",
+    "IOT",
+    "MQTT",
+    "Charging Station"
+  ],
+  "author": "Maciej Spiechowicz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MSpiechowicz/charging-station-aws-iot/issues"
+  },
+  "homepage": "https://github.com/MSpiechowicz/charging-station-aws-iot#readme",
+  "dependencies": {
+    "aws-iot-device-sdk": "^2.2.6",
+    "uuid": "^8.3.2"
+  }
+}
